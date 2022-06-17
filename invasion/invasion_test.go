@@ -13,7 +13,7 @@ import (
 
 func TestInvasion_Start(t *testing.T) {
 
-	t.Run("aliens not destroyed at start city", func(t *testing.T) {
+	t.Run("aliens not destroyed at starter city", func(t *testing.T) {
 		wm := parseSmallMap(t)
 
 		moves := map[int]*moveList{

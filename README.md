@@ -14,8 +14,9 @@ This project simulates a world alien invasion.
 
 1. N ​aliens​ ​start​ ​out​ ​at​ ​random​ ​places (cities) ​on​ ​the​ ​map,​ ​and​ ​wander​ ​around​ ​randomly following​ ​links.​ ​Each​ ​iteration,​ ​the​ ​aliens​ ​can​ ​travel​ ​in​ ​any​ ​of​ ​the​ ​directions leading​ ​out​ ​of​ ​a​ ​city.​
 2. If two or more aliens end up in​ ​the​ ​same​ ​place,​ ​they​ ​fight,​ ​and​ ​in​ ​the​ ​process​ ​kill each​ ​other​ ​and​ ​destroy​ ​the​ ​city.​
-3. If at the starting point, there is more than two aliens in a same city, they will not fight until the first move/iteration has been done.
-4. The​ ​program​ ​will ​run​ ​until​ ​all​ ​the​ ​aliens or the cities​ ​have​ ​been destroyed,​ ​or​ ​each​ ​non-trapped alien​ ​has​ ​moved​ ​at​ ​least​ ​10,000​ ​times.
+3. Once​ ​a​ ​city​ ​is​ ​destroyed,​ ​aliens​ ​can​ ​no​ ​longer​ ​travel​ ​to​ ​or​ ​through​ ​it. ​This may​ ​lead​ ​to​ ​aliens​ ​getting​ ​"trapped".
+4. If at the starting point, there is more than 1 alien in a same city, they will not fight until the first move/iteration has been done.
+5. The​ ​program​ ​will ​run​ ​until​ ​all​ ​the​ ​aliens or the cities​ ​have​ ​been destroyed,​ ​or​ ​each​ ​non-trapped alien​ ​has​ ​moved​ ​at​ ​least​ ​10,000​ ​times.
 
 The simulation will finish in the following identified cases:
 
