@@ -12,7 +12,7 @@ This project simulates a world alien invasion.
 
 ## 1. Invasion rules
 
-1. N ​aliens​ ​start​ ​out​ ​at​ ​random​ ​places (cities) ​on​ ​the​ ​map,​ ​and​ ​wander​ ​around​ ​randomly, following​ ​links.​ ​Each​ ​iteration,​ ​the​ ​aliens​ ​can​ ​travel​ ​in​ ​any​ ​of​ ​the​ ​directions leading​ ​out​ ​of​ ​a​ ​city.​
+1. N ​aliens​ ​start​ ​out​ ​at​ ​random​ ​places (cities) ​on​ ​the​ ​map,​ ​and​ ​wander​ ​around​ ​randomly following​ ​links.​ ​Each​ ​iteration,​ ​the​ ​aliens​ ​can​ ​travel​ ​in​ ​any​ ​of​ ​the​ ​directions leading​ ​out​ ​of​ ​a​ ​city.​
 2. If two or more aliens end up in​ ​the​ ​same​ ​place,​ ​they​ ​fight,​ ​and​ ​in​ ​the​ ​process​ ​kill each​ ​other​ ​and​ ​destroy​ ​the​ ​city.​
 3. If at the starting point, there is more than two aliens in a same city, they will not fight until the first move/iteration has been done.
 4. The​ ​program​ ​will ​run​ ​until​ ​all​ ​the​ ​aliens or the cities​ ​have​ ​been destroyed,​ ​or​ ​each​ ​non-trapped alien​ ​has​ ​moved​ ​at​ ​least​ ​10,000​ ​times.
@@ -51,8 +51,8 @@ C9 north=C6 west=C8
 This project is organized in 3 main folders:
 
 1. **cmd/**: Contains all the executable main packages of this project: `map_generator` and `simulator`.
-2. **invasion/**: Contains all the logic about the invasion simulator.
-3. **mapgen/**: Contains all the logic to generate world maps with a given width and height.
+2. **invasion/**: Contains all the business logic about the invasion simulator.
+3. **mapgen/**: Contains all the business logic to generate world maps with a given width and height.
 
 ## 4. Executables
 
