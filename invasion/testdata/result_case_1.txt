@@ -1,0 +1,12 @@
+C2 has been destroyed by alien 1 and alien 3!
+C5 has been destroyed by alien 0, alien 2 and alien 4!
+All the aliens have been destroyed!
+
+Result map:
+C1 south=C4
+C3 south=C6
+C4 north=C1 south=C7
+C6 north=C3 south=C9
+C7 north=C4 east=C8
+C8 east=C9 west=C7
+C9 north=C6 west=C8

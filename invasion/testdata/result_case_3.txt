@@ -1,0 +1,33 @@
+C4 has been destroyed by alien 0 and alien 1!
+C10 has been destroyed by alien 2 and alien 3!
+C16 has been destroyed by alien 4 and alien 5!
+C23 has been destroyed by alien 6 and alien 7!
+C24 has been destroyed by alien 8 and alien 9!
+Remaining aliens can't reach each other!
+
+Result map:
+C1 south=C7 east=C2
+C11 north=C5 south=C17 east=C12
+C12 north=C6 south=C18 west=C11
+C13 north=C7 south=C19 east=C14
+C14 north=C8 south=C20 east=C15 west=C13
+C15 north=C9 south=C21 west=C14
+C17 north=C11 east=C18
+C18 north=C12 west=C17
+C19 north=C13 south=C25 east=C20
+C2 south=C8 east=C3 west=C1
+C20 north=C14 south=C26 east=C21 west=C19
+C21 north=C15 south=C27 east=C22 west=C20
+C22 south=C28 west=C21
+C25 north=C19 east=C26
+C26 north=C20 east=C27 west=C25
+C27 north=C21 east=C28 west=C26
+C28 north=C22 east=C29 west=C27
+C29 east=C30 west=C28
+C3 south=C9 west=C2
+C30 west=C29
+C5 south=C11 east=C6
+C6 south=C12 west=C5
+C7 north=C1 south=C13 east=C8
+C8 north=C2 south=C14 east=C9 west=C7
+C9 north=C3 south=C15 west=C8
