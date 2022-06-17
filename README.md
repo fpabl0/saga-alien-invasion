@@ -14,9 +14,10 @@ This project simulates a world alien invasion.
 
 1. N ​aliens​ ​start​ ​out​ ​at​ ​random​ ​places (cities) ​on​ ​the​ ​map,​ ​and​ ​wander​ ​around​ ​randomly following​ ​links.​ ​Each​ ​iteration,​ ​the​ ​aliens​ ​can​ ​travel​ ​in​ ​any​ ​of​ ​the​ ​directions leading​ ​out​ ​of​ ​a​ ​city.​
 2. If two or more aliens end up in​ ​the​ ​same​ ​place,​ ​they​ ​fight,​ ​and​ ​in​ ​the​ ​process​ ​kill each​ ​other​ ​and​ ​destroy​ ​the​ ​city.​
-3. Once​ ​a​ ​city​ ​is​ ​destroyed,​ ​aliens​ ​can​ ​no​ ​longer​ ​travel​ ​to​ ​or​ ​through​ ​it. ​This may​ ​lead​ ​to​ ​aliens​ ​getting​ ​"trapped".
-4. If at the starting point, there is more than 1 alien in a same city, they will not fight until the first move/iteration has been done.
-5. The​ ​program​ ​will ​run​ ​until​ ​all​ ​the​ ​aliens or the cities​ ​have​ ​been destroyed,​ ​or​ ​each​ ​non-trapped alien​ ​has​ ​moved​ ​at​ ​least​ ​10,000​ ​times.
+3. ​When​ ​a​ ​city​ ​is​ ​destroyed,​ ​it​ ​is​ ​removed​ ​from the​ ​map,​ ​and​ ​so​ ​are​ ​any​ ​roads​ ​that​ ​lead​ ​into​ ​or​ ​out​ ​of​ ​it.
+4. Once​ ​a​ ​city​ ​is​ ​destroyed,​ ​aliens​ ​can​ ​no​ ​longer​ ​travel​ ​to​ ​or​ ​through​ ​it. ​This may​ ​lead​ ​to​ ​aliens​ ​getting​ ​"trapped".
+5. If at the starting point, there is more than 1 alien in a same city, they will not fight until the first move/iteration has been done.
+6. The​ ​program​ ​will ​run​ ​until​ ​all​ ​the​ ​aliens or the cities​ ​have​ ​been destroyed,​ ​or​ ​each​ ​non-trapped alien​ ​has​ ​moved​ ​at​ ​least​ ​10,000​ ​times.
 
 The simulation will finish in the following identified cases:
 
@@ -45,7 +46,9 @@ C9 north=C6 west=C8
 **Rules:**
 
 1. City names must have only letters [A-Z a-z] or numbers [0-9] or both. Spaces and other symbols are not allowed.
-2. Directions must be any of the lowered-cases words: `north | south | east | west`. The directions order does not matter.
+2. The map file should have one city per line. The​ ​city​ ​name​ ​is​ ​first, followed​ ​by​ ​1-4​ ​directions​ ​(north,​ ​south,​ ​east,​ ​or​ ​west).​ ​Each​ ​one​ ​represents​ ​a road​ ​to​ ​another​ ​city​ ​that​ ​lies​ ​in​ ​that​ ​direction.
+3. Directions must be any of the lowered-cases words: `north | south | east | west`. The directions order does not matter.
+4. The​ ​city​ ​and​ ​each​ ​of​ ​the​ ​direction pairs​ ​should be​ ​separated​ ​by​ ​a​ ​single​ ​space, ​and​ ​the directions​ ​are​ ​separated​ ​from​ ​their​ ​respective​ ​cities​ ​with​ ​an​ ​equals​ ​(=​) sign.
 
 ## 3. Project structure
 
