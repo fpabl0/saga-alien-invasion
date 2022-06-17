@@ -10,7 +10,7 @@ This project simulates a world alien invasion.
 4. [Executables](#4-executables)
 5. [Tests](#5-tests)
 
-### 1. Invasion rules
+## 1. Invasion rules
 
 1. N ​aliens​ ​start​ ​out​ ​at​ ​random​ ​places (cities) ​on​ ​the​ ​map,​ ​and​ ​wander​ ​around​ ​randomly, following​ ​links.​ ​Each​ ​iteration,​ ​the​ ​aliens​ ​can​ ​travel​ ​in​ ​any​ ​of​ ​the​ ​directions leading​ ​out​ ​of​ ​a​ ​city.​
 2. If two or more aliens end up in​ ​the​ ​same​ ​place,​ ​they​ ​fight,​ ​and​ ​in​ ​the​ ​process​ ​kill each​ ​other​ ​and​ ​destroy​ ​the​ ​city.​
@@ -25,7 +25,7 @@ The simulation will finish in the following identified cases:
 - **Case 4:** All the remaining aliens were trapped.
 - **Case 5:** There is only 1 free alien, then no city can be destroyed.
 
-### 2. Map file format
+## 2. Map file format
 
 Map file format should be '.txt' file containing a city with its surroundings in each line. For example:
 
@@ -46,7 +46,7 @@ C9 north=C6 west=C8
 1. City names must have only letters [A-Z a-z] or numbers [0-9] or both. Spaces and other symbols are not allowed.
 2. Directions must be any of the lowered-cases words: `north | south | east | west`. The directions order does not matter.
 
-### 3. Project structure
+## 3. Project structure
 
 This project is organized in 3 main folders:
 
@@ -54,9 +54,9 @@ This project is organized in 3 main folders:
 2. **invasion/**: Contains all the logic about the invasion simulator.
 3. **mapgen/**: Contains all the logic to generate world maps with a given width and height.
 
-### 4. Executables
+## 4. Executables
 
-#### 4.1. Map generator (cmd/map_generator)
+### 4.1. Map generator (cmd/map_generator)
 
 Map generator easily creates a map with a given width and height specified by the user in the passed output file.
 
@@ -77,7 +77,7 @@ For example, if we want to generate a map file in the current directory called `
 $ go run cmd/map_generator/main.go -out my_map.txt -width 20 -height 30
 ```
 
-#### 4.2. Simulator (cmd/simulator)
+### 4.2. Simulator (cmd/simulator)
 
 Simulator command line starts invasion simulator with a given number of aliens, map file and output file specified by the user.
 
@@ -98,7 +98,7 @@ For example, if we want to simulate the invasion of 1000 aliens using a map file
 $ go run cmd/invasion/main.go -n 1000 -m map1.txt -o result.txt
 ```
 
-### 5. Tests
+## 5. Tests
 
 The available test files (`*_test.go`) can be found inside `invasion/` and `mapgen/` folders.
 
